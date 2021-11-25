@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  transition: 0.3s;
+}
+button {
+  outline: none;
+  border: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.scriptHeadTxt {
+  margin: 1rem 0 3rem 0;
+  padding: 1rem;
+  width: fit-content;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: #efd81d;
+  color: #000;
+}
+.scriptHeadTxt:hover {
+  background-color: #000;
+  color: #efd81d;
+}
+.lommeRegnerTxt {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.lommeRegnerContainer {
+  background-color: rgb(68, 68, 68);
+  display: grid;
+  grid-template-columns: repeat(4, 16rem);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(9rem, auto);
+  padding: 10px;
+}
+
+.lommeRegnerChild1 {
+  cursor: pointer;
+  text-align: center;
+  font-size: 4rem;
+  background-color: #f8f8f8;
+}
+.lommeRegnerChild2 {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  cursor: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 4rem;
+  background-color: #a09c9c;
+}
+.lommeRegnerChild3 {
+  cursor: pointer;
+  text-align: center;
+  font-size: 4rem;
+  background-color: #ca0909;
+}
+#result {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  cursor: none;
+  grid-column: 1 / 4;
+  font-size: 2rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 4rem;
+  text-align: right;
+  background-color: #444444;
+  color: #fff;
+}
+.lommeRegnerChild1:hover {
+  background-color: #dbdada;
+}
+.lommeRegnerChild2:hover {
+  background-color: #c4bebe;
+}
+.lommeRegnerChild3:hover {
+  background-color: #ee0a0a;
+}
+
+@media (max-width: 1000px) {
+  .lommeRegnerContainer {
+    grid-template-columns: repeat(4, 9rem);
+  }
+  .lommeRegnerChild1,
+  .lommeRegnerChild2,
+  .lommeRegnerChild3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .lommeRegnerContainer {
+    grid-template-columns: repeat(4, 6rem);
+  }
+  .lommeRegnerChild1,
+  .lommeRegnerChild2,
+  .lommeRegnerChild3 {
+    font-size: 2rem;
+  }
+}
